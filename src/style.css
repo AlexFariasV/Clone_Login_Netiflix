@@ -51,7 +51,6 @@ form section article input[type=email],
 form section article input[type=password] {
   border: none;
   outline: none;
-  padding-left: 35px;
 }
 form section button {
   display: flex;
