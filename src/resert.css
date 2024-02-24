@@ -1,0 +1,108 @@
+/* Reset CSS */
+
+/* Box sizing border-box by default */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+fieldset,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+/* Root element */
+html {
+    font-size: 62.5%;
+    /* Define 1rem to be 10px */
+}
+
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+    /* Equivalent to 16px */
+    line-height: 1.6;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: inherit;
+}
+
+/* Lists */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Forms */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Buttons */
+button {
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+/* Misc */
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
