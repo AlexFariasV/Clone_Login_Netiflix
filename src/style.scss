@@ -1,0 +1,105 @@
+/* Vars */
+:root {
+    --font__principal: "Dm Sans", sans-serif;
+}
+
+body {
+    font-family: var(--font__principal);
+    background-image: url("./img/rohit-tandon-9wg5jCEPBsw-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Vars */
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    height: 100%;
+    background-color: rgb(255, 255, 255, .4);
+    padding: 30px;
+    gap: 20px;
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    p {
+        padding: 8px;
+        text-align: justify;
+
+    }
+
+    section {
+
+
+
+        .box{
+            gap: 8px;
+            margin: 10px;   
+            display: flex;
+            align-items: center;
+            justify-content: space-between;  
+        }
+        article {
+            gap: 8px;
+            margin: 10px;
+            input[type="email"],input[type="password"] {
+                border: none;
+                outline: none;
+                padding-left: 35px;
+                
+            }
+
+           
+        }
+        
+        button {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 5px;
+
+            width: 100%;
+            padding: 5px;
+            background-color: rgb(255, 255, 255, .8);
+            border-radius: 8px;
+            font-weight: 700;
+            transition: all 0.5s ease;
+
+
+            &:hover{
+                 transform: scale(1.05);
+                 box-shadow: 0.7px 0.7px 4px #333;
+                
+            }
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+           
+            margin-bottom: 5px;
+            justify-content: center;
+           cursor: pointer;
+          background-color: #fff;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
