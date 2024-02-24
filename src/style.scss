@@ -45,26 +45,29 @@ form {
 
 
 
-        .box{
+        .box {
             gap: 8px;
-            margin: 10px;   
+            margin: 10px;
             display: flex;
             align-items: center;
-            justify-content: space-between;  
+            justify-content: space-between;
         }
+
         article {
             gap: 8px;
             margin: 10px;
-            input[type="email"],input[type="password"] {
+
+            input[type="email"],
+            input[type="password"] {
                 border: none;
                 outline: none;
                 padding-left: 35px;
-                
+
             }
 
-           
+
         }
-        
+
         button {
 
             display: flex;
@@ -81,22 +84,24 @@ form {
             transition: all 0.5s ease;
 
 
-            &:hover{
-                 transform: scale(1.05);
-                 box-shadow: 0.7px 0.7px 4px #333;
-                
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0.7px 0.7px 4px #333;
+
             }
         }
-        .icon{
+
+        .icon {
             display: flex;
             align-items: center;
-           
+
             margin-bottom: 5px;
             justify-content: center;
-           cursor: pointer;
-          background-color: #fff;
+            cursor: pointer;
+            background-color: #fff;
         }
-        p{
+
+        p {
             display: flex;
             justify-content: center;
             align-items: center;

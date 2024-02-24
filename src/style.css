@@ -47,7 +47,8 @@ form section article {
   gap: 8px;
   margin: 10px;
 }
-form section article input[type=email], form section article input[type=password] {
+form section article input[type=email],
+form section article input[type=password] {
   border: none;
   outline: none;
   padding-left: 35px;
