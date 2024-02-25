@@ -36,30 +36,68 @@ form p {
   padding: 8px;
   text-align: justify;
 }
+form section {
+  max-width: 330px;
+  width: 100%;
+}
+form section fieldset {
+  padding: 15px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+form section fieldset legend {
+  text-align: center;
+  border: 1px solid #333;
+  /* border-radius: 5px; */
+  padding: 6px;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
 form section .box {
-  gap: 8px;
-  margin: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  margin: 0;
+  padding: 0;
 }
-form section article {
-  gap: 8px;
+form section .inputbox {
   margin: 10px;
+  position: relative;
+  border-bottom: 1px solid #333;
+  margin-top: 20px;
 }
-form section article input[type=email],
-form section article input[type=password] {
+form section .inputbox input[type=email],
+form section .inputbox input[type=password] {
   border: none;
   outline: none;
+  background-color: transparent;
+  width: 92%;
+}
+form section .inputbox label {
+  position: absolute;
+  left: 0;
+  padding-left: 23px;
+  pointer-events: none;
+  /* Faz o nosso label ficar meio invisivel ao clicar */
+  transition: all 0.5s;
+  /* A ser arrummado  */
+  font-size: 1.5rem;
+}
+form section .inputbox input:focus ~ label,
+form section .inputbox input:focus ~ :valid {
+  top: -18px;
+  transform: scale(0.9);
 }
 form section button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 10px;
   width: 100%;
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
   border-radius: 8px;
   font-weight: 700;
   transition: all 0.5s ease;
@@ -67,17 +105,55 @@ form section button {
 form section button:hover {
   transform: scale(1.05);
   box-shadow: 0.7px 0.7px 4px #333;
+  border: 3px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+form section a {
+  color: blue;
+  font-size: 1.1rem;
+}
+form section a:hover {
+  text-decoration: underline;
 }
 form section .icon {
   display: flex;
   align-items: center;
+  border: 1px solid #333;
+  box-shadow: 1px 1px 2px #333;
   margin-bottom: 5px;
+  border-radius: 8px;
   justify-content: center;
   cursor: pointer;
   background-color: #fff;
+}
+form section .icon img {
+  width: 25px;
 }
 form section p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+form section .alternative {
+  text-align: center;
+  padding: 25px;
+}
+form section .alternative span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 400;
+}
+form section .alternative span::before,
+form section fieldset .alternative span::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 50%;
+  background: #333;
 }/*# sourceMappingURL=style.css.map */
