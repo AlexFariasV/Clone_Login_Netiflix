@@ -1,10 +1,6 @@
 /* Vars */
-:root {
-  --font__principal: "Dm Sans", sans-serif;
-}
-
 body {
-  font-family: var(--font__principal);
+  font-family: "Dm Sans", sans-serif;
   background-image: url("./img/rohit-tandon-9wg5jCEPBsw-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -31,6 +27,7 @@ form h1 {
   font-size: 3.5rem;
   font-weight: 600;
   text-decoration: underline;
+  letter-spacing: 3px;
 }
 form p {
   padding: 8px;
@@ -79,10 +76,10 @@ form section .inputbox label {
   position: absolute;
   left: 0;
   padding-left: 23px;
-  pointer-events: none;
-  /* Faz o nosso label ficar meio invisivel ao clicar */
+  pointer-events: none; /* Faz o nosso label ficar meio invisivel ao clicar */
   transition: all 0.5s;
   /* A ser arrummado  */
+  transition: 1s all ease;
   font-size: 1.5rem;
 }
 form section .inputbox input:focus ~ label,
