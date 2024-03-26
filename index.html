@@ -4,70 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="stylesheet" href="./src/resert.css">
-
-    <title>Tela de login</title>
-
+    <title> Clone tela de Login Netiflix </title>
+    <link rel="stylesheet" href="./src/style/resert.css">
+    <link rel="stylesheet" href="./src/style/style.css">
 </head>
 
 <body>
-    <form action="#">
-        <h1> Welcome to our website </h1>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ullam fugiat expedita alias temporibus
-            sapiente distinctio accusamus, veniam, animi optio a, maxime atque est rem repellat provident perspiciatis
-            sint quia! </p>
-        <section>
-            <fieldset>
-                <legend><b> Welcome to login </b></legend>
-                <div class="inputbox">
-                    <ion-icon name="mail-outline"></ion-icon>
-                    <input type="email" maxlength="20">
-                    <label>Email: </label>
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="./src/img/netflixlogo.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="container__login">
+        <article class="box__login">
+            <h1>
+                Entrar
+            </h1>
+        </article>
+        <form>
+            <div class="box__input">
+                <input type="email" class="" placeholder="Email ou número de telefone" required>
+            </div>
+            <div class="box__input" >
+                <input type="password" class="input__field"  placeholder="Senha" id="password" required>
+
+                <img src="./src/img/eye-off.svg" alt="" class="input__icon">
+            </div>
+            <button class="button">
+                Entrar
+            </button>
+            <div class="support">
+                <div class="remember">
+                    <span><input type="checkbox" style="margin: 0;padding: 0; height: 13px;"></span>
+                    <span>Lembre-se de mim</span>
                 </div>
-                <div class="inputbox">
-                    <ion-icon name="globe-outline"></ion-icon>
-                    <input type="password" maxlength="20">
-                    <label>Password: </label>
+                <div class="help">
+                    <a href="#">
+                        Precisa de ajuda?
+                    </a>
                 </div>
-                <div class="box">
-                    <p>
-                        <input type="checkbox" name="" id="">
-                        Remember Me
-                    </p>
+            </div>
+            <div class="login_footer">
+                <div class="sign_up">
+                    <p>Novo por aqui? <a href="#">Assine agora.</a></p>
                 </div>
-                <button>
-                    Login
-                </button>
-                <div class="alternative">
-                    <span>ou</span>
-                  </div>
-                <article class="incon_modal">
-                    <div class="icon google">
-                        <img src="./src/img/icons8-google-48.png" alt="imagem1">
-                        <p>
-                            Google
-                        </p>
-                    </div>
-                    <div class="icon facebook">
-                        <img src="./src/img/icons8-facebook-48.png" alt="imagem2">
-                        <p>
-                            Facebook
-                        </p>
-                    </div>
-                </article>
-            </fieldset>
-        </section>
-    </form>
 
-
-
-
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+                <div class="terms">
+                    <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais</a></p>
+                </div>
+        </form>
 </body>
+<script src="./src/js/index.js"></script>
 
 </html>
