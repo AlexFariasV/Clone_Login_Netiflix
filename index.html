@@ -27,11 +27,13 @@
             <div class="box__input">
                 <input type="email" class="" placeholder="Email ou número de telefone" required>
             </div>
-            <div class="box__input" >
-                <input type="password" class="input__field"  placeholder="Senha" id="password" required>
 
-                <img src="./src/img/eye-off.svg" alt="" class="input__icon">
-            </div>
+            <section class="input__wrapper">
+                <input id="password" type="password" class="input__field" placeholder="Senha" required>
+                <img alt="Eye Icon" title="Eye Icon" src="./src/img/eye-off.svg" class="input__icon">
+            </section>
+
+
             <button class="button">
                 Entrar
             </button>
@@ -52,7 +54,8 @@
                 </div>
 
                 <div class="terms">
-                    <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais</a></p>
+                    <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a
+                            href="#">Saiba mais</a></p>
                 </div>
         </form>
 </body>
