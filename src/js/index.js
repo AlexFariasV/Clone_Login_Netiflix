@@ -3,16 +3,16 @@ const inputIcon = document.querySelectorAll(".input__icon");
 
 inputIcon.forEach((item, i) => {
     item.addEventListener("click", (e) => {
-
+    
         e.preventDefault();
-
+    
         item.setAttribute(
             'src',
             input[i].getAttribute('type') === 'password' ?
-                '../img/eye.svg'
-                : '../img/eye-off.svg'
+                '../../img/eye.svg'
+                : '../../img/eye-off.svg'
         );
-
+    
         input[i].setAttribute(
             'type',
             input[i].getAttribute('type') === 'password' ?

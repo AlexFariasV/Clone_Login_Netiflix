@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title> Clone tela de Login Netiflix </title>
+
     <link rel="stylesheet" href="./src/style/resert.css">
     <link rel="stylesheet" href="./src/style/style.css">
 </head>
@@ -13,7 +15,7 @@
     <div class="header">
         <div class="logo">
             <a href="#">
-                <img src="./src/img/netflixlogo.png" alt="">
+                <img src="./img/netflixlogo.png" alt="">
             </a>
         </div>
     </div>
@@ -27,13 +29,10 @@
             <div class="box__input">
                 <input type="email" class="" placeholder="Email ou número de telefone" required>
             </div>
-
-            <section class="input__wrapper">
+            <div class="box__input">
                 <input id="password" type="password" class="input__field" placeholder="Senha" required>
-                <img alt="Eye Icon" title="Eye Icon" src="./src/img/eye-off.svg" class="input__icon">
-            </section>
-
-
+                <img alt="Eye Icon" title="Eye Icon" src="./img/eye-off.svg" class="input__icon">
+            </div>
             <button class="button">
                 Entrar
             </button>
@@ -52,13 +51,14 @@
                 <div class="sign_up">
                     <p>Novo por aqui? <a href="#">Assine agora.</a></p>
                 </div>
-
                 <div class="terms">
                     <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a
-                            href="#">Saiba mais</a></p>
+                            href="#">Saiba mais</a>
+                    </p>
                 </div>
+            </div>
         </form>
+    </div>
+    <script src="./src/js/index.js"></script>
 </body>
-<script src="./src/js/index.js"></script>
-
 </html>
