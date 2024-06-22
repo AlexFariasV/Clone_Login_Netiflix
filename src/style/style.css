@@ -49,6 +49,18 @@ body {
 }
 .container__login form .box__input {
   position: relative;
+
+}
+.password-container{
+  position: relative;
+  width: 100%;
+}
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 8px);
+  cursor: pointer;
+  color: #fff;
 }
 .container__login form .box__input .input__icon {
   position: absolute;

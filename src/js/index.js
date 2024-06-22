@@ -1,24 +1,12 @@
-const input = document.querySelectorAll(".input__field");
-const inputIcon = document.querySelectorAll(".input__icon");
+const togglePassword = document.querySelector("#togglePassword");
+const password = document.querySelector("#password");
 
-inputIcon.forEach((item, i) => {
-    item.addEventListener("click", (e) => {
-    
-        e.preventDefault();
-    
-        item.setAttribute(
-            'src',
-            input[i].getAttribute('type') === 'password' ?
-                '../../img/eye.svg'
-                : '../../img/eye-off.svg'
-        );
-    
-        input[i].setAttribute(
-            'type',
-            input[i].getAttribute('type') === 'password' ?
-                'text'
-                :
-                'password'
-        );
-    });
-})
+togglePassword.addEventListener("click", function () {
+  const type = password.type === "password" ? "text" : "password";
+
+  password.type = type;
+
+  // this -> elemento
+  this.classList.toggle("fa-eye-slash");
+  this.classList.toggle("fa-eye");  
+});
