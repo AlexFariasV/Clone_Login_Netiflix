@@ -1,5 +1,7 @@
 # Clone da Página de Login da Netflix
 
+![Captura de tela 2024-08-17 225735](https://github.com/user-attachments/assets/dba2f396-a96c-4ec1-904b-8e4f371c3a05)
+
 Este é um projeto de clonagem da página de login da Netflix, desenvolvido com HTML, CSS, SCSS e JavaScript. Foi criado com o propósito de aprendizado e prática de desenvolvimento web.
 
 ## Funcionalidades
